@@ -1,0 +1,12 @@
+@model VideoStore.Models.Video
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>@Model.Title</h2>
+<p><strong>Genre:</strong> @Model.Genre</p>
+<p><strong>Year:</strong> @Model.Year</p>
+<p><strong>Price:</strong> @Model.Price</p>
+<p>@Model.Description</p>
+<a asp-action="Index" class="btn btn-secondary">Back</a>

@@ -1,0 +1,43 @@
+@model VideoStore.Models.Video
+
+@{
+    ViewData["Title"] = "Edit Video";
+}
+
+<h2>Edit Video</h2>
+<form method="post" class="disable-on-submit track-dirty fade-in" novalidate data-unsaved-message="You have unsaved changes. Are you sure you want to leave?">
+    <input type="hidden" asp-for="Id" />
+    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+    <div class="mb-3">
+        <label class="form-label">Title</label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="invalid-feedback"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Genre</label>
+        <input asp-for="Genre" class="form-control" />
+        <span asp-validation-for="Genre" class="invalid-feedback"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Year</label>
+        <input asp-for="Year" class="form-control" />
+        <span asp-validation-for="Year" class="invalid-feedback"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Price</label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="invalid-feedback"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Description</label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="invalid-feedback"></span>
+    </div>
+    <button class="btn btn-primary" type="submit">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

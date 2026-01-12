@@ -1,0 +1,58 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+/* Simple fade-in animation for forms */
+.fade-in {
+  animation: vs-fade-in 320ms ease-out both;
+}
+
+@keyframes vs-fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Invalid input shake and feedback animation */
+.is-invalid { animation: vs-shake 360ms ease; }
+@keyframes vs-shake {
+  10%, 90% { transform: translateX(-1px); }
+  20%, 80% { transform: translateX(2px); }
+  30%, 50%, 70% { transform: translateX(-4px); }
+}
+
+/* Smooth modal title highlight */
+#deleteModalTitle { transition: color 180ms ease; }
+
+/* Optional fade out for deleted rows (used if we do client-side remove) */
+.row-fade-out { animation: vs-row-fade 420ms ease forwards; }
+@keyframes vs-row-fade {
+  to { opacity: 0; height: 0; padding: 0; margin: 0; transform: scaleY(0.98); }
+}
