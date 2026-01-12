@@ -191,4 +191,5 @@ C:\Users\nicho\source\repos\VideoStore\obj\Debug\net10.0\VideoStore.pdb
 C:\Users\nicho\source\repos\VideoStore\obj\Debug\net10.0\VideoStore.genruntimeconfig.cache
 C:\Users\nicho\source\repos\VideoStore\obj\Debug\net10.0\ref\VideoStore.dll
 c:\Users\nicho\source\repos\VideoStore\obj\Debug\net10.0\compressed\9wq2mr4nua-{0}-zx6hyvl624-zx6hyvl624.gz
-c:\Users\nicho\source\repos\VideoStore\obj\Debug\net10.0\compressed\a7ym6akvw8-{0}-4nc90snbsr-4nc90snbsr.gz
+c:\Users\nicho\source\repos\VideoStore\obj\Debug\net10.0\VideoStore.sourcelink.json
+c:\Users\nicho\source\repos\VideoStore\obj\Debug\net10.0\compressed\a7ym6akvw8-{0}-tanz1gyj4o-tanz1gyj4o.gz
