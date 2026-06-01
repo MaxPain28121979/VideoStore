@@ -1,0 +1,14 @@
+videostore.db-shm
+bin/Debug/net10.0/VideoStore.dll
+bin/Debug/net10.0/VideoStore.exe
+bin/Debug/net10.0/VideoStore.pdb
+obj/Debug/net10.0/apphost.exe
+obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
+obj/Debug/net10.0/rjsmrazor.dswa.cache.json
+obj/Debug/net10.0/VideoStore.AssemblyInfo.cs
+obj/Debug/net10.0/VideoStore.AssemblyInfoInputs.cache
+obj/Debug/net10.0/VideoStore.dll
+obj/Debug/net10.0/VideoStore.pdb
+obj/Debug/net10.0/VideoStore.sourcelink.json
+obj/Debug/net10.0/ref/VideoStore.dll
+obj/Debug/net10.0/refint/VideoStore.dll
