@@ -1,0 +1,32 @@
+@model IEnumerable<VideoStore.Models.User>
+
+@{
+    ViewData["Title"] = "Users";
+}
+
+<h2>Users</h2>
+
+<a class="btn btn-primary mb-3" asp-action="Create">Create User</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>Role</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var user in Model)
+{
+        <tr>
+            <td>@user.Email</td>
+            <td>@user.Role</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@user.Id">Edit</a> |
+                <a asp-action="Delete" asp-route-id="@user.Id" class="text-danger">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
